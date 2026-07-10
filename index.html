@@ -349,27 +349,33 @@
                 <p>Open to full-time roles, contract engagements, and interesting one-off collaborations. If it involves
                     clean code and a little bit of dimensional polish, I want to hear about it.</p>
                 <ul class="contact-list">
-                    <li><span class="k">EMAIL</span><a href="mailto:danielvaleriomin@gmail.com">danielvaleriomin@gmail.com</a></li>
-                    <li><span class="k">GITHUB</span><a href="https://github.com/nielvalerio">github.com/nielvalerio</a></li>
-                    <li><span class="k">LINKEDIN</span><a href="https://www.linkedin.com/in/daniel-robles-44b602403/?skipRedirect=true">linkedin.com/in/Daniel Robles</a></li>
-                    <li><span class="k">FACEBOOK</span><a href="https://www.facebook.com/daniel.robles.358742/">facebook.com/DANIEL ROBLES</a></li>
+                    <li><span class="k">EMAIL</span><a
+                            href="mailto:danielvaleriomin@gmail.com">danielvaleriomin@gmail.com</a></li>
+                    <li><span class="k">GITHUB</span><a href="https://github.com/nielvalerio">github.com/nielvalerio</a>
+                    </li>
+                    <li><span class="k">LINKEDIN</span><a
+                            href="https://www.linkedin.com/in/daniel-robles-44b602403/?skipRedirect=true">linkedin.com/in/Daniel
+                            Robles</a></li>
+                    <li><span class="k">FACEBOOK</span><a
+                            href="https://www.facebook.com/daniel.robles.358742/">facebook.com/DANIEL ROBLES</a></li>
                 </ul>
             </div>
-            <form class="reveal"
-                onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Message sent ✓';">
+            <form class="reveal" id="contactForm">
                 <div class="field">
                     <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="Enter your Name" required>
+                    <input id="name" name="name" type="text" placeholder="Enter your Name" required>
                 </div>
                 <div class="field">
                     <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="Enter your Email" required>
+                    <input id="email" name="email" type="email" placeholder="Enter your Email" required>
                 </div>
                 <div class="field">
                     <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="Tell me about the project..." required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about the project..."
+                        required></textarea>
                 </div>
-                <button type="submit" class="btn primary">Send Message →</button>
+                <button type="submit" class="btn primary" id="sendBtn">Send Message →</button>
+                <div id="formStatus" style="font-family: var(--mono); font-size: 12px; margin-top: 6px;"></div>
             </form>
         </div>
     </section>
@@ -722,6 +728,47 @@
         if (localStorage.getItem("theme") === "light") {
             document.body.classList.add("light");
         }
+
+        /* ---------------- Contact form submission ---------------- */
+        const contactForm = document.getElementById('contactForm');
+        const sendBtn = document.getElementById('sendBtn');
+        const formStatus = document.getElementById('formStatus');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            sendBtn.textContent = 'Sending...';
+            formStatus.textContent = '';
+
+            const payload = {
+                name: contactForm.name.value,
+                email: contactForm.email.value,
+                message: contactForm.message.value,
+            };
+
+            try {
+                const res = await fetch('/api/send-message', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    sendBtn.textContent = 'Message sent ✓';
+                    formStatus.style.color = 'var(--cyan)';
+                    formStatus.textContent = data.message;
+                    contactForm.reset();
+                } else {
+                    sendBtn.textContent = 'Send Message →';
+                    formStatus.style.color = '#ff6b6b';
+                    formStatus.textContent = data.message;
+                }
+            } catch (err) {
+                sendBtn.textContent = 'Send Message →';
+                formStatus.style.color = '#ff6b6b';
+                formStatus.textContent = 'Something went wrong. Please try again.';
+            }
+        });
     </script>
 </body>
 
