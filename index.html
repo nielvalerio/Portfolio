@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Creative &amp; Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="blueprint-grid"></div>
+
+    <header>
+        <div class="logo">BS<span>IT</span>.</div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav>
+            <ul id="navList">
+                <li><a href="#home" class="nav-link">01 — HOME</a></li>
+                <li><a href="#about" class="nav-link">02 — ABOUT</a></li>
+                <li><a href="#skills" class="nav-link">03 — SKILLS</a></li>
+                <li><a href="#projects" class="nav-link">04 — PROJECTS</a></li>
+                <li><a href="#certifications" class="nav-link">05 — CERTIFICATIONS</a></li>
+                <li><a href="#contact" class="nav-link">06 — CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dot-nav">
+        <a href="#home" data-label="Home" class="dot active"></a>
+        <a href="#about" data-label="About" class="dot"></a>
+        <a href="#skills" data-label="Skills" class="dot"></a>
+        <a href="#projects" data-label="Projects" class="dot"></a>
+        <a href="#certifications" data-label="Certifications" class="dot"></a>
+        <a href="#contact" data-label="Contact" class="dot"></a>
+    </div>
+
+    <!-- ============ HOME ============ -->
+    <section id="home">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-inner">
+            <div class="eyebrow">Hi. I'm</div>
+            <h1>JOHN DANIEL</h1>
+            <h2 class="hero-title">
+                <span id="heroText"></span>
+            </h2>
+            <p class="role">I create modern digital solutions through web development and
+                user-centered design. Leveraging HTML, CSS, JavaScript, PHP, MySQL, and UI/UX principles, I develop
+                responsive, secure, and scalable web applications tailored to real-world needs. My experience includes
+                building records management systems, AI-powered chatbot prototypes, and interactive web applications
+                that emphasize functionality, usability, and maintainable design.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn primary">View Projects →</a>
+                <a href="#contact" class="btn ghost">Get in Touch</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <span class="sun">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </span>
+
+                    <span class="moon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 1 0 9.8 9.8z" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+        <div class="section-head reveal">
+            <h2 class="section-title">About Me.</h2>
+            <div class="section-index">02 / 06<br>Profile</div>
+        </div>
+        <div class="about-grid">
+            <div class="portrait-frame reveal">
+                <div class="corner-bracket tl"></div>
+                <div class="corner-bracket tr"></div>
+                <div class="corner-bracket bl"></div>
+                <div class="corner-bracket br"></div>
+                <span class="tag">FIG. 01 — SELF</span>
+                <canvas id="about-canvas"></canvas>
+                <img src="images/grad_pic.jpg" alt="John Daniel V. Robles" class="about-photo-circle">
+            </div>
+            <div class="about-text reveal">
+                <p>Hello! My name is <strong>John Daniel V. Robles</strong>, a Bachelor of Science in Information
+                    Technology graduate from City College of Calamba with a <strong> strong passion for software
+                        development,
+                        problem-solving, and building practical digital solutions</strong>. I enjoy turning ideas into
+                    functional
+                    applications and continuously expanding my knowledge by exploring new technologies and development
+                    practices.</p>
+                <p>Throughout my academic journey, I developed several <strong>full-stack web applications</strong>,
+                    <strong>mobile applications</strong>,
+                    and an <strong>AI-powered chatbot</strong>. My capstone project, <strong>QARMS</strong>, is a
+                    web-based records management system
+                    developed for our college's Quality Assurance and Records Management Office, <strong>featuring
+                        secure
+                        authentication, document management, CRUD operations, reporting and analytics, and multi-user
+                        collaboration</strong>. I also developed an AI chatbot designed to provide automated assistance
+                    and improve
+                    user interaction, allowing me to gain experience in integrating intelligent features into web
+                    applications. In addition, I built a campus navigation mobile application for Android, where I
+                    strengthened my mobile development and problem-solving skills by overcoming technical challenges
+                    throughout the development process.
+                </p>
+                <p>I also completed my <strong>600-hour on-the-job training</strong> at <strong>the Office of the
+                        College
+                        Registrar as an IT Support and
+                        Programmer</strong>. During my internship, I developed <strong>OCRMS</strong>, a web-based
+                    records management system with
+                    <strong>queue management, process automation, and role-based access control</strong> to improve
+                    office operations.
+                    The project was recognized with the <strong>Best OJT and Innovation Merit Award</strong> for its
+                    innovation and
+                    practical impact.
+                </p>
+                <p> My technical skills include <strong>HTML, CSS, JavaScript, PHP, MySQL, Java, responsive web
+                        development, UI/UX design, database management, and Git/GitHub</strong>. I am currently seeking
+                    an
+                    opportunity to begin my professional career as a software developer, where I can <strong>contribute
+                        my
+                        technical skills, continue learning from experienced professionals, and develop innovative,
+                        reliable, and user-centered applications.</strong></p>
+                <div class="stat-row">
+                    <div class="stat">
+                        <div class="num">1</div>
+                        <div class="label">YEAR OF EXPERIENCE</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">4</div>
+                        <div class="label">PROJECTS LAUNCHED</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">2</div>
+                        <div class="label">TEAMS COLLABORATED</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+        <div class="section-head reveal">
+            <h2 class="section-title">Skills<br>and Knowledge</h2>
+            <div class="section-index">03 / 06<br>Capabilities</div>
+        </div>
+        <div class="skills-grid reveal" id="skillsGrid">
+            <!-- injected by JS -->
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+        <div class="section-head reveal">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-index">04 / 06<br>2023 — 2026</div>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-visual">
+                    <img src="images/QARMS.PNG" alt="Quality Assurance and Records Management System (QARMS)"
+                        class="project-img">
+                    <span class="glyph">◈</span>
+                </div>
+                <div class="project-body">
+                    <span class="project-index">PROJECT — 01</span>
+                    <h3>Quality Assurance and Records Management System (QARMS)</h3>
+                    <p>A web-based application developed for the City College of Calamba's Center for Quality
+                        Assurance and Development Office and Records Management Office. It streamlines the management of
+                        institutional records by providing secure document storage, efficient record retrieval, user
+                        access control, and automated reporting. The system enhances operational efficiency, improves
+                        data accuracy, and supports collaboration through real-time updates, activity tracking, and
+                        centralized records management.</p>
+                    <div class="tag-row">
+                        <span>HTML</span><span>CSS</span><span>Java</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JSON</span><span>Composer</span><span>PHPmailer</span>
+                    </div>
+                    <a href="#" class="project-link">View case study →</a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-visual">
+                    <img src="images/OCRMS.PNG" alt="Office of the College Registrar Management System (OCRMS)"
+                        class="project-img">
+                    <span class="glyph">▣</span>
+                </div>
+                <div class="project-body">
+                    <span class="project-index">PROJECT — 02</span>
+                    <h3>Office of the College Registrar Management System (OCRMS)</h3>
+                    <p> A web-based application developed
+                        for the City College of Calamba's Office of the College Registrar. It streamlines registrar
+                        operations by digitizing student records management, document processing, and queueing services.
+                        The system features secure user authentication, role-based access control, automated report
+                        generation, real-time updates, and data management, enabling the office to improve efficiency,
+                        accuracy, and service delivery while maintaining the integrity and confidentiality of academic
+                        records.
+                    </p>
+                    <div class="tag-row">
+                        <span>HTML</span><span>CSS</span><span>Java</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JSON</span><span>Composer</span><span>PHPmailer</span>
+                    </div>
+                    <a href="#" class="project-link">View case study →</a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-visual">
+                    <img src="images/QUEUE.PNG" alt="Queuing System" class="project-img">
+                    <span class="glyph">◉</span>
+                </div>
+                <div class="project-body">
+                    <span class="project-index">PROJECT — 03</span>
+                    <h3>Queuing System & AI Chatbot</h3>
+                    <p>A web-based application developed to improve the efficiency of registrar services by automating
+                        queue management and providing instant assistance to users. It enables students to obtain queue
+                        numbers digitally, monitor their queue status in real time, and receive responses to frequently
+                        asked questions through an AI-powered chatbot. By integrating intelligent assistance with queue
+                        management, the system reduces waiting times, minimizes repetitive inquiries, and enhances the
+                        overall user experience while improving operational efficiency.</p>
+                    <div class="tag-row">
+                        <span>HTML</span><span>CSS</span><span>Java</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JSON</span><span>Ollama</span><span>Node.js</span>
+                    </div>
+                    <a href="#" class="project-link">View case study →</a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-visual">
+                    <img src="images/TTS Converter.PNG" alt="TTS Converter" class="project-img">
+                    <span class="glyph">◬</span>
+                </div>
+                <div class="project-body">
+                    <span class="project-index">PROJECT — 04</span>
+                    <h3>TTS Converter</h3>
+                    <p>A web-based application that transforms written text into natural-sounding speech using
+                        text-to-speech technology. It enables users to generate audio from text for improved
+                        accessibility, content narration, and hands-free interaction. The application provides a simple
+                        and efficient interface, making it suitable for educational, productivity, and
+                        accessibility-related use cases.</p>
+                    <div class="tag-row">
+                        <span>HTML</span><span>CSS</span><span>Java</span><span>JavaScript</span><span>PHP</span><span>Bootstrap</span><span>JSON</span><span>API</span>
+                    </div>
+                    <a href="#" class="project-link">View repository →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications">
+        <div class="section-head reveal">
+            <h2 class="section-title">Certifications<br>&amp; Acknowledgement</h2>
+            <div class="section-index">05 / 06<br>Credentials</div>
+        </div>
+        <div class="timeline">
+
+            <div class="cert-item reveal">
+                <span class="cert-date">2026</span>
+                <h3 class="cert-title">
+                    Advanced Level: Job Ready — Employability Skills
+                    <div class="cert-preview">
+                        <img src="images/wadhani_cert.PNG" alt="Job Ready Employability Skills certificate">
+                    </div>
+                </h3>
+                <p>Job-readiness training covering workplace skills, professionalism, and career preparation.</p>
+                <span class="cert-issuer">Wadhwani Foundation · City College of Calamba — May 27, 2026</span>
+            </div>
+
+            <div class="cert-item reveal">
+                <span class="cert-date">2026</span>
+                <h3 class="cert-title">
+                    Introduction to HTML
+                    <div class="cert-preview">
+                        <img src="images/HTML_cert.PNG" alt="HTML certificate">
+                    </div>
+                </h3>
+                <p></p>
+                <span class="cert-issuer">SimpliLearn SkillUp — July 3, 2026</span>
+            </div>
+
+            <div class="cert-item reveal">
+                <span class="cert-date">2026</span>
+                <h3 class="cert-title">
+                    Introduction to CSS
+                    <div class="cert-preview">
+                        <img src="images/CSS_cert.PNG" alt="CSS certificate">
+                    </div>
+                </h3>
+                <p></p>
+                <span class="cert-issuer">SimpliLearn SkillUp — July 4, 2026</span>
+            </div>
+
+            <div class="cert-item reveal">
+                <span class="cert-date">2026</span>
+                <h3 class="cert-title">
+                    What is Software Development?
+                    <div class="cert-preview">
+                        <img src="images/SOFTDEV_cert.PNG" alt="What is Software Development certificate">
+                    </div>
+                </h3>
+                <p>Foundational course covering the software development lifecycle and core engineering concepts.</p>
+                <span class="cert-issuer">SimpliLearn SkillUp— July 6, 2026</span>
+            </div>
+
+            <div class="cert-item reveal">
+                <span class="cert-date">2026</span>
+                <h3 class="cert-title">
+                    Master AI for Web App Development
+                    <div class="cert-preview">
+                        <img src="images/webappdev_cert.PNG" alt="Master AI for Web App Development certificate">
+                    </div>
+                </h3>
+                <p>Applied training on integrating AI-powered features into web applications.</p>
+                <span class="cert-issuer">SimpliLearn SkillUp — July 6, 2026</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+        <div class="section-head reveal">
+            <h2 class="section-title">Let's build<br>something.</h2>
+            <div class="section-index">06 / 06<br>Contact</div>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <p>Open to full-time roles, contract engagements, and interesting one-off collaborations. If it involves
+                    clean code and a little bit of dimensional polish, I want to hear about it.</p>
+                <ul class="contact-list">
+                    <li><span class="k">EMAIL</span><a href="mailto:danielvaleriomin@gmail.com">danielvaleriomin@gmail.com</a></li>
+                    <li><span class="k">GITHUB</span><a href="https://github.com/nielvalerio">github.com/nielvalerio</a></li>
+                    <li><span class="k">LINKEDIN</span><a href="https://www.linkedin.com/in/daniel-robles-44b602403/?skipRedirect=true">linkedin.com/in/Daniel Robles</a></li>
+                    <li><span class="k">FACEBOOK</span><a href="https://www.facebook.com/daniel.robles.358742/">facebook.com/DANIEL ROBLES</a></li>
+                </ul>
+            </div>
+            <form class="reveal"
+                onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Message sent ✓';">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your Name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me about the project..." required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message →</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2026 Daniel Robles. Built with intent.</span>
+        <span>Back to <a href="#home">top ↑</a></span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        /* ---------------- Mobile nav ---------------- */
+        const navToggle = document.getElementById('navToggle');
+        const navList = document.getElementById('navList');
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('open');
+            const expanded = navList.classList.contains('open');
+            navToggle.setAttribute('aria-expanded', expanded);
+        });
+        document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => navList.classList.remove('open')));
+
+        /* ---------------- Scroll reveal ---------------- */
+        const revealEls = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => io.observe(el));
+
+        /* ---------------- Dot nav + active link sync ---------------- */
+        const sections = document.querySelectorAll('section');
+        const dots = document.querySelectorAll('.dot-nav a');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    dots.forEach(d => d.classList.toggle('active', d.getAttribute('href') === '#' + id));
+                    navLinks.forEach(n => n.classList.toggle('active', n.getAttribute('href') === '#' + id));
+                }
+            });
+        }, { threshold: 0.5 });
+        sections.forEach(s => sectionObserver.observe(s));
+
+        /* ---------------- Skills data + ring build ---------------- */
+        const skillData = [
+            { name: 'Languages', pct: 85, desc: 'PHP / JAVA / JAVASCRIPT / C++ / SQL' },
+            { name: 'Frontend Development', pct: 90, desc: 'HTML / CSS / BOOTSTRAP' },
+            { name: 'Backend & Database', pct: 80, desc: 'PHP / MYSQL / CRUD SYSTEMS' },
+            { name: 'Mobile Development', pct: 50, desc: 'JAVA / ANDROID / CAMPUS NAV APP' },
+            { name: 'AI & Chatbot Integration', pct: 70, desc: 'AI CHATBOT DEV / OCRMS ASSISTANT' },
+            { name: 'Systems & Records Management', pct: 88, desc: 'QUEUE MGMT / ROLE-BASED ACCESS' },
+            { name: 'Tools & Productivity', pct: 85, desc: 'GIT / GITHUB / ANDROID STUDIO / VS CODE / XAMPP' },
+            { name: 'UI/UX & Design', pct: 85, desc: 'FIGMA/ CANVA / ADOBE PHOTOSHOP / MS POWERPOINT' },
+        ];
+        const grid = document.getElementById('skillsGrid');
+        const R = 36, C = 2 * Math.PI * R;
+        skillData.forEach(s => {
+            const card = document.createElement('div');
+            card.className = 'skill-card';
+            card.innerHTML = `
+    <div class="ring-wrap">
+      <svg width="86" height="86" viewBox="0 0 86 86">
+        <circle class="ring-bg" cx="43" cy="43" r="${R}" fill="none" stroke-width="4"></circle>
+        <circle class="ring-fg" cx="43" cy="43" r="${R}" fill="none" stroke-width="4" data-pct="${s.pct}"></circle>
+      </svg>
+      <div class="pct">${s.pct}%</div>
+    </div>
+    <h3>${s.name}</h3>
+    <p>${s.desc}</p>
+  `;
+            grid.appendChild(card);
+        });
+        const ringObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const ring = e.target.querySelector('.ring-fg');
+                    const pct = parseFloat(ring.dataset.pct);
+                    const offset = C - (pct / 100) * C;
+                    requestAnimationFrame(() => ring.style.strokeDashoffset = offset);
+                    ringObserver.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.4 });
+        document.querySelectorAll('.skill-card').forEach(c => ringObserver.observe(c));
+
+        /* ---------------- Project card 3D tilt ---------------- */
+        if (!reduceMotion) {
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const r = card.getBoundingClientRect();
+                    const x = (e.clientX - r.left) / r.width - 0.5;
+                    const y = (e.clientY - r.top) / r.height - 0.5;
+                    card.style.transform = `perspective(800px) rotateY(${x * 7}deg) rotateX(${-y * 7}deg) translateY(-4px)`;
+                });
+                card.addEventListener('mouseleave', () => { card.style.transform = 'perspective(800px) rotateY(0) rotateX(0) translateY(0)'; });
+            });
+        }
+
+        /* ================= THREE.JS: HERO WIREFRAME GLOBE + PARTICLES ================= */
+        (function heroScene() {
+            const canvas = document.getElementById('hero-canvas');
+            const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 100);
+            camera.position.z = 9;
+
+            function resize() {
+                const w = window.innerWidth, h = window.innerHeight;
+                renderer.setSize(w, h);
+                camera.aspect = w / h;
+                camera.updateProjectionMatrix();
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            // Wireframe icosphere
+            const geo = new THREE.IcosahedronGeometry(3, 2);
+            const mat = new THREE.MeshBasicMaterial({ color: 0x2e8fff, wireframe: true, transparent: true, opacity: 0.35 });
+            const globe = new THREE.Mesh(geo, mat);
+            globe.position.x = 3;
+            scene.add(globe);
+
+            const geo2 = new THREE.IcosahedronGeometry(3.02, 1);
+            const mat2 = new THREE.MeshBasicMaterial({ color: 0x7fdbff, wireframe: true, transparent: true, opacity: 0.18 });
+            const globe2 = new THREE.Mesh(geo2, mat2);
+            globe2.position.x = 3;
+            scene.add(globe2);
+
+            // Particle field
+            const starCount = 700;
+            const positions = new Float32Array(starCount * 3);
+            for (let i = 0; i < starCount; i++) {
+                const r = 6 + Math.random() * 14;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos((Math.random() * 2) - 1);
+                positions[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+                positions[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+                positions[i * 3 + 2] = r * Math.cos(phi);
+            }
+            const starGeo = new THREE.BufferGeometry();
+            starGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            const starMat = new THREE.PointsMaterial({ color: 0x7fdbff, size: 0.035, transparent: true, opacity: 0.7 });
+            const stars = new THREE.Points(starGeo, starMat);
+            scene.add(stars);
+
+            // Orbiting nodes
+            const nodeGroup = new THREE.Group();
+            const nodeGeo = new THREE.SphereGeometry(0.045, 8, 8);
+            const nodeMat = new THREE.MeshBasicMaterial({ color: 0x7fdbff });
+            const nodeCount = 14;
+            const nodeData = [];
+            for (let i = 0; i < nodeCount; i++) {
+                const m = new THREE.Mesh(nodeGeo, nodeMat);
+                const radius = 3;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos((Math.random() * 2) - 1);
+                nodeData.push({ theta, phi, radius, speed: 0.05 + Math.random() * 0.1 });
+                nodeGroup.add(m);
+            }
+            scene.add(nodeGroup);
+
+            let mouseX = 0, mouseY = 0;
+            window.addEventListener('mousemove', (e) => {
+                mouseX = (e.clientX / window.innerWidth - 0.5);
+                mouseY = (e.clientY / window.innerHeight - 0.5);
+            });
+
+            const clock = new THREE.Clock();
+            function animate() {
+                requestAnimationFrame(animate);
+                const t = clock.getElapsedTime();
+                if (!reduceMotion) {
+                    globe.rotation.y = t * 0.08;
+                    globe.rotation.x = t * 0.03;
+                    globe2.rotation.y = -t * 0.05;
+                    globe2.rotation.x = t * 0.02;
+                    stars.rotation.y = t * 0.01;
+
+                    nodeGroup.children.forEach((m, i) => {
+                        const d = nodeData[i];
+                        const angle = t * d.speed;
+                        m.position.set(
+                            3 + d.radius * Math.sin(d.phi) * Math.cos(d.theta + angle),
+                            d.radius * Math.sin(d.phi) * Math.sin(d.theta + angle),
+                            d.radius * Math.cos(d.phi)
+                        );
+                    });
+
+                    camera.position.x += (mouseX * 1.2 - camera.position.x) * 0.03;
+                    camera.position.y += (-mouseY * 1.2 - camera.position.y) * 0.03;
+                    camera.lookAt(0, 0, 0);
+                }
+                renderer.render(scene, camera);
+            }
+            animate();
+        })();
+
+        /* ================= THREE.JS: ABOUT PORTRAIT — constellation + glitter ================= */
+        (function aboutScene() {
+            const canvas = document.getElementById('about-canvas');
+            const parent = canvas.parentElement;
+            const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 50);
+            camera.position.z = 6;
+
+            function resize() {
+                const w = parent.clientWidth, h = parent.clientHeight;
+                renderer.setSize(w, h);
+                camera.aspect = w / h;
+                camera.updateProjectionMatrix();
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            const group = new THREE.Group();
+            scene.add(group);
+
+            // Orbiting nodes at varying radii/depths around the photo circle
+            const nodeGeo = new THREE.SphereGeometry(0.04, 8, 8);
+            const nodeMat = new THREE.MeshBasicMaterial({ color: 0x7fdbff });
+            const nodeCount = 22;
+            const nodes = [];
+            for (let i = 0; i < nodeCount; i++) {
+                const m = new THREE.Mesh(nodeGeo, nodeMat);
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos((Math.random() * 2) - 1);
+                const radius = 2.15 + Math.random() * 0.55; // ring band just outside the photo
+                nodes.push({ mesh: m, theta, phi, radius, speed: 0.04 + Math.random() * 0.08 });
+                group.add(m);
+            }
+
+            // Faint connecting lines between nearby nodes (recomputed each frame)
+            const maxLines = 40;
+            const lineGeo = new THREE.BufferGeometry();
+            const linePositions = new Float32Array(maxLines * 2 * 3);
+            lineGeo.setAttribute('position', new THREE.BufferAttribute(linePositions, 3));
+            const lineMat = new THREE.LineBasicMaterial({ color: 0x2e8fff, transparent: true, opacity: 0.25 });
+            const lines = new THREE.LineSegments(lineGeo, lineMat);
+            group.add(lines);
+
+            // Glitter — small twinkling particle dust filling the frame
+            const glitterCount = 150;
+            const glitterPositions = new Float32Array(glitterCount * 3);
+            for (let i = 0; i < glitterCount; i++) {
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos((Math.random() * 2) - 1);
+                const radius = 1.4 + Math.random() * 2.2; // spread from near the photo out past the ring
+                glitterPositions[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
+                glitterPositions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta) * 0.55;
+                glitterPositions[i * 3 + 2] = radius * Math.cos(phi);
+            }
+            const glitterGeo = new THREE.BufferGeometry();
+            glitterGeo.setAttribute('position', new THREE.BufferAttribute(glitterPositions, 3));
+            const glitterMat = new THREE.PointsMaterial({
+                color: 0x7fdbff,
+                size: 0.028,
+                transparent: true,
+                opacity: 0.7,
+                sizeAttenuation: true
+            });
+            const glitter = new THREE.Points(glitterGeo, glitterMat);
+            group.add(glitter);
+
+            const clock = new THREE.Clock();
+            function animate() {
+                requestAnimationFrame(animate);
+                const t = clock.getElapsedTime();
+                if (!reduceMotion) {
+                    nodes.forEach(n => {
+                        const angle = t * n.speed;
+                        n.mesh.position.set(
+                            n.radius * Math.sin(n.phi) * Math.cos(n.theta + angle),
+                            n.radius * Math.sin(n.phi) * Math.sin(n.theta + angle) * 0.55,
+                            n.radius * Math.cos(n.phi)
+                        );
+                    });
+
+                    // update connecting lines between close pairs
+                    let idx = 0;
+                    const pos = lineGeo.attributes.position.array;
+                    for (let i = 0; i < nodes.length && idx < maxLines; i++) {
+                        for (let j = i + 1; j < nodes.length && idx < maxLines; j++) {
+                            const d = nodes[i].mesh.position.distanceTo(nodes[j].mesh.position);
+                            if (d < 1.1) {
+                                pos.set([
+                                    nodes[i].mesh.position.x, nodes[i].mesh.position.y, nodes[i].mesh.position.z,
+                                    nodes[j].mesh.position.x, nodes[j].mesh.position.y, nodes[j].mesh.position.z
+                                ], idx * 6);
+                                idx++;
+                            }
+                        }
+                    }
+                    lineGeo.setDrawRange(0, idx * 2);
+                    lineGeo.attributes.position.needsUpdate = true;
+
+                    // twinkle: pulse overall opacity + subtle slow rotation drift
+                    glitterMat.opacity = 0.45 + Math.sin(t * 1.8) * 0.25;
+                    glitter.rotation.y = t * 0.02;
+                    glitter.rotation.x = Math.sin(t * 0.15) * 0.05;
+
+                    group.rotation.y = t * 0.05;
+                }
+                renderer.render(scene, camera);
+            }
+            animate();
+        })();
+
+        const heroTitles = [
+            "Web Developer",
+            "Turning Ideas Into Digital Solutions",
+            "UI/UX Designer",
+            "Designing User-Centered Experiences",
+            "From Concept to Deployment"
+        ];
+
+        const heroText = document.getElementById("heroText");
+
+        let heroIndex = 0;
+
+        function rotateHeroText() {
+            heroText.style.animation = "none";
+            heroText.offsetHeight;
+            heroText.style.animation = "fadeSlide .8s ease";
+
+            heroText.textContent = heroTitles[heroIndex];
+
+            heroIndex++;
+            if (heroIndex >= heroTitles.length) {
+                heroIndex = 0;
+            }
+        }
+
+        rotateHeroText();
+        setInterval(rotateHeroText, 2500);
+
+        const btn = document.getElementById("themeToggle");
+
+        btn.onclick = () => {
+            document.body.classList.toggle("light");
+
+            const light = document.body.classList.contains("light");
+            localStorage.setItem("theme", light ? "light" : "dark");
+        };
+
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light");
+        }
+    </script>
+</body>
+
+</html>
